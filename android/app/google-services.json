@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371957954122",
+    "project_id": "fir-test-412a0",
+    "storage_bucket": "fir-test-412a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371957954122:android:0181daea25469ae44898b3",
+        "android_client_info": {
+          "package_name": "com.example.skeleton_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFSSIlWnAG0r575BTielzexMm9ZT0p7nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

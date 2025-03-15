@@ -1,0 +1,47 @@
+name: skeleton_app
+description: "A new Flutter project."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  google_sign_in: ^6.2.2
+  nfc_manager: ^3.5.0
+  supabase_flutter: ^2.8.4
+  app_links: ^6.4.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
+    - assets/
+    - assets/Hack_Club_Assemble_LTNJ_00622_Large_ysbchr.jpg
+    - assets/nfcExampleGreyScale.jpg
+    - assets/greenTick.jpg
+    - assets/ScrapyardSearchAssets/
+    - assets/ScrapyardSearchAssets/searchbar.png
+    - assets/ScrapyardSearchAssets/female_widget.png
+    - assets/ScrapyardSearchAssets/male_widget.png
+    - assets/male2.png
+    - assets/female2.png

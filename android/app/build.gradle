@@ -1,0 +1,54 @@
+buildscript {
+    ext.kotlin_version = '1.9.0'  // Update to latest Kotlin version
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.1'  // Make sure this is up to date
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Ensure the Kotlin plugin version is correct
+    }
+}
+
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services'  // If using Firebase
+    id "kotlin-android"  // Apply Kotlin plugin
+    id "dev.flutter.flutter-gradle-plugin"  // Flutter plugin
+}
+
+android {
+    namespace = "com.example.skeleton_app"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.skeleton_app"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        minSdkVersion 23
+        targetSdkVersion 33
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
