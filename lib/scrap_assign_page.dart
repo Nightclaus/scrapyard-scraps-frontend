@@ -133,11 +133,19 @@ class ClickableProfileState extends State<ClickableProfile> {
     });
   }
 
+  bool pairingIsActive = false;
+
   void beignPair() async {
+    pairingIsActive = true;
+    setState(() {});
     String? nfcCode = await scanNFC();
-    if (nfcCode == null) return;
+    if (nfcCode == null) {
+      pairingIsActive = false;
+      return;
+    }
     supabaseAccess.assignNfcTagValue(widget.email, nfcCode);
-    await Future.delayed(Duration(milliseconds: 400));
+    await Future.delayed(Duration(milliseconds: 1500));
+    pairingIsActive = false;
     setState(() {});
   }
 
@@ -221,7 +229,12 @@ class ClickableProfileState extends State<ClickableProfile> {
                 padding: EdgeInsets.zero, // No extra padding
                 minimumSize: Size(55, 55), // Square dimensions
               ),
-              child: Column(
+              child: pairingIsActive 
+                ? SizedBox(
+                  width: 40,
+                  height: 40,
+                  child: CircularProgressIndicator()
+                ) : Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text('Pair'),

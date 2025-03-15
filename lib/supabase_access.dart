@@ -1,5 +1,5 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
-const String local_system_ver = 'v0.2';
+const String local_system_ver = 'v1.2';
 
 final SupabaseAccess supabaseAccess = SupabaseAccess();
 
@@ -116,10 +116,16 @@ class SupabaseAccess {
   Future<void> bulkAssignScrapsWithNfc(List<String> allNfcValues, int newScrapValue) async {
     try {
     // Start a batch request to update all users with the new scrap value
-      final updates = allNfcValues.map((nfc) {
+      final updates = allNfcValues.map((nfc) async {
+        final response = await _supabase
+          .from('users')
+          .select('scraps') // Get the current scraps value
+          .eq('nfc_tag', nfc)
+          .single();
+        int originalScraps = response['scraps'] as int;
         return _supabase
             .from('users')
-            .update({'scraps': newScrapValue}) // Change 'scrap_value' to your desired field
+            .update({'scraps': originalScraps + newScrapValue}) // Change 'scrap_value' to your desired field
             .eq('nfc_tag', nfc);
       }).toList();
 

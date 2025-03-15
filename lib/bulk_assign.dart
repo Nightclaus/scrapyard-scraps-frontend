@@ -19,7 +19,8 @@ class BulkAssignState extends State<BulkAssign> {
 
   void toogleBulkPairing() {
     isBulkAssignActive = !isBulkAssignActive;
-    //supabaseAccess.bulkAssignScrapsWithNfc(['test', 'test2'], 5); // API test
+    //supabaseAccess.bulkAssignScrapsWithNfc(['test', 'test'], 33); // API test
+    //return;
 
     if (!isBulkAssignActive) { // Just Switched back
       // Finalisation Logic
@@ -51,9 +52,11 @@ class BulkAssignState extends State<BulkAssign> {
         await Future.delayed(Duration(milliseconds: 100));
 
         if (nfcValue == null) throw Exception("No NFC Detected");
-        setState(() {
-          nfcValuesInTheBulk.add(nfcValue);
-        });
+        if (!nfcValuesInTheBulk.contains(nfcValue)) {
+          setState(() {
+            nfcValuesInTheBulk.add(nfcValue);
+          });
+        }
       } catch (e) {
         print("Error: $e");
         _errorLogs = 'You do not have NFC capabilites';
@@ -67,9 +70,11 @@ class BulkAssignState extends State<BulkAssign> {
     while (isRunning) {
       try {
         await Future.delayed(Duration(milliseconds: 500));
-        setState(() {
-          nfcValuesInTheBulk.add('entry');
-        });
+        if (!nfcValuesInTheBulk.contains('test')) {
+          setState(() {
+            nfcValuesInTheBulk.add('test');
+          });
+        }
       } catch (e) {
         print("Error: $e");
         _errorLogs = 'You do not have NFC capabilites';

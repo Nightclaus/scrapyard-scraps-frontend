@@ -212,6 +212,7 @@ class AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       //appBar: AppBar(title: Text('Skeleton Firebase Test')),
       body: Center(
         child: Container(
