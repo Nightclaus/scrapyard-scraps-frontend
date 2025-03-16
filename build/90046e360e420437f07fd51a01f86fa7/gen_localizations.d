@@ -1,0 +1,1 @@
+ /Users/zhong_st/Desktop/skeleton_app/skeleton_app/.dart_tool/flutter_gen/gen_l10n/app_localizations_en.dart /Users/zhong_st/Desktop/skeleton_app/skeleton_app/.dart_tool/flutter_gen/gen_l10n/app_localizations.dart:  /Users/zhong_st/Desktop/skeleton_app/skeleton_app/l10n.yaml /Users/zhong_st/Desktop/skeleton_app/skeleton_app/lib/src/localization/app_en.arb

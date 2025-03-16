@@ -1,0 +1,4 @@
+#Sun Mar 16 00:34:02 AEDT 2025
+base.0=/Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

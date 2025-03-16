@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.skeleton_app-mergeReleaseResources-43:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/zhong_st/.gradle/caches/transforms-3/95f3e4ed322a004b917acdae44cae551/transformed/appcompat-1.1.0/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

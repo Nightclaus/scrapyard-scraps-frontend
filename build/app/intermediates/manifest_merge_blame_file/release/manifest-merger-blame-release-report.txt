@@ -1,0 +1,267 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.skeleton_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="33" />
+10
+11    <!-- NFC Permission (Add this if it's not already present) -->
+12    <uses-permission android:name="android.permission.NFC" />
+12-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:4:5-62
+12-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:4:22-59
+13
+14    <!-- NFC Feature (If your app requires NFC, set android:required="true") -->
+15    <uses-feature
+15-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:7:5-81
+16        android:name="android.hardware.nfc"
+16-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:7:19-54
+17        android:required="true" />
+17-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:7:55-78
+18
+19    <!-- Queries section for handling text -->
+20    <queries>
+20-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:54:5-59:15
+21        <intent>
+21-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:55:9-58:18
+22            <action android:name="android.intent.action.PROCESS_TEXT" />
+22-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:56:13-72
+22-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:56:21-70
+23
+24            <data android:mimeType="text/plain" />
+24-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:57:13-50
+24-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:57:19-48
+25        </intent>
+26    </queries>
+27
+28    <uses-permission android:name="android.permission.INTERNET" />
+28-->[:google_sign_in_android] /Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/google_sign_in_android/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-67
+28-->[:google_sign_in_android] /Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/google_sign_in_android/intermediates/merged_manifest/release/AndroidManifest.xml:7:22-64
+29
+30    <permission
+30-->[androidx.core:core:1.13.1] /Users/zhong_st/.gradle/caches/transforms-3/5d285db99d106552dd762c1aca6e5aff/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.skeleton_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.13.1] /Users/zhong_st/.gradle/caches/transforms-3/5d285db99d106552dd762c1aca6e5aff/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.13.1] /Users/zhong_st/.gradle/caches/transforms-3/5d285db99d106552dd762c1aca6e5aff/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.skeleton_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.13.1] /Users/zhong_st/.gradle/caches/transforms-3/5d285db99d106552dd762c1aca6e5aff/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.13.1] /Users/zhong_st/.gradle/caches/transforms-3/5d285db99d106552dd762c1aca6e5aff/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+35
+36    <application
+37        android:name="android.app.Application"
+37-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:11:9-42
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.13.1] /Users/zhong_st/.gradle/caches/transforms-3/5d285db99d106552dd762c1aca6e5aff/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+39        android:extractNativeLibs="false"
+40        android:icon="@mipmap/ic_launcher"
+40-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:12:9-43
+41        android:label="skeleton_app" >
+41-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:10:9-37
+42        <activity
+42-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:14:9-47:20
+43            android:name="com.example.skeleton_app.MainActivity"
+43-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:15:13-41
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+44-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:20:13-163
+45            android:exported="true"
+45-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:16:13-36
+46            android:hardwareAccelerated="true"
+46-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:21:13-47
+47            android:launchMode="singleTop"
+47-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:17:13-43
+48            android:taskAffinity=""
+48-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:18:13-36
+49            android:theme="@style/LaunchTheme"
+49-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:19:13-47
+50            android:windowSoftInputMode="adjustResize" >
+50-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:22:13-55
+51
+52            <!-- Launch Activity Meta-data -->
+53            <meta-data
+53-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:25:13-27:57
+54                android:name="io.flutter.embedding.android.NormalTheme"
+54-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:26:17-72
+55                android:resource="@style/NormalTheme" />
+55-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:27:17-54
+56
+57            <intent-filter>
+57-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:29:13-32:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:30:17-68
+58-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:30:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:31:17-76
+60-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:31:27-74
+61            </intent-filter>
+62
+63            <!-- NFC Intent Filters -->
+64            <intent-filter>
+64-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:35:13-38:29
+65                <action android:name="android.nfc.action.NFC_DISCOVERED" />
+65-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:36:17-75
+65-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:36:25-73
+66
+67                <category android:name="android.intent.category.DEFAULT" />
+67-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:37:17-75
+67-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:37:27-73
+68            </intent-filter>
+69            <intent-filter>
+69-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:39:13-42:29
+70                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+70-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:40:17-75
+70-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:40:25-73
+71
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:37:17-75
+72-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:37:27-73
+73            </intent-filter>
+74            <intent-filter>
+74-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:43:13-46:29
+75                <action android:name="android.nfc.action.ACTION_TAG_DISCOVERED" />
+75-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:44:17-82
+75-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:44:25-80
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:37:17-75
+77-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:37:27-73
+78            </intent-filter>
+79        </activity>
+80
+81        <!-- Don't delete this meta-data: Flutter tool generated -->
+82        <meta-data
+82-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:50:9-72
+83            android:name="flutterEmbedding"
+83-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:50:20-51
+84            android:value="2" />
+84-->/Users/zhong_st/Desktop/skeleton_app/skeleton_app/android/app/src/main/AndroidManifest.xml:50:52-69
+85
+86        <activity
+86-->[:url_launcher_android] /Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-11:74
+87            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+87-->[:url_launcher_android] /Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-74
+88            android:exported="false"
+88-->[:url_launcher_android] /Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-37
+89            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+89-->[:url_launcher_android] /Users/zhong_st/Desktop/skeleton_app/skeleton_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-71
+90
+91        <uses-library
+91-->[androidx.window:window:1.2.0] /Users/zhong_st/.gradle/caches/transforms-3/424c87796a28d95a550efdfb699f38f1/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+92            android:name="androidx.window.extensions"
+92-->[androidx.window:window:1.2.0] /Users/zhong_st/.gradle/caches/transforms-3/424c87796a28d95a550efdfb699f38f1/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+93            android:required="false" />
+93-->[androidx.window:window:1.2.0] /Users/zhong_st/.gradle/caches/transforms-3/424c87796a28d95a550efdfb699f38f1/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+94        <uses-library
+94-->[androidx.window:window:1.2.0] /Users/zhong_st/.gradle/caches/transforms-3/424c87796a28d95a550efdfb699f38f1/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+95            android:name="androidx.window.sidecar"
+95-->[androidx.window:window:1.2.0] /Users/zhong_st/.gradle/caches/transforms-3/424c87796a28d95a550efdfb699f38f1/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+96            android:required="false" />
+96-->[androidx.window:window:1.2.0] /Users/zhong_st/.gradle/caches/transforms-3/424c87796a28d95a550efdfb699f38f1/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+97
+98        <activity
+98-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:23:9-27:75
+99            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+99-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:24:13-93
+100            android:excludeFromRecents="true"
+100-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:25:13-46
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:26:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:27:13-72
+103        <!--
+104            Service handling Google Sign-In user revocation. For apps that do not integrate with
+105            Google Sign-In, this service will never be started.
+106        -->
+107        <service
+107-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:33:9-37:51
+108            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+108-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:34:13-89
+109            android:exported="true"
+109-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:35:13-36
+110            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+110-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:36:13-107
+111            android:visibleToInstantApps="true" />
+111-->[com.google.android.gms:play-services-auth:21.0.0] /Users/zhong_st/.gradle/caches/transforms-3/3894e7fe3981761a64777cc6b11a262b/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:37:13-48
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:18.0.1] /Users/zhong_st/.gradle/caches/transforms-3/ae8e5b337901d6b50edc3804df809d41/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:18.0.1] /Users/zhong_st/.gradle/caches/transforms-3/ae8e5b337901d6b50edc3804df809d41/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:18.0.1] /Users/zhong_st/.gradle/caches/transforms-3/ae8e5b337901d6b50edc3804df809d41/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:18.0.1] /Users/zhong_st/.gradle/caches/transforms-3/ae8e5b337901d6b50edc3804df809d41/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+117
+118        <meta-data
+118-->[com.google.android.gms:play-services-basement:18.2.0] /Users/zhong_st/.gradle/caches/transforms-3/f5e3b01132e64abfaa2593336f10f1a6/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+119            android:name="com.google.android.gms.version"
+119-->[com.google.android.gms:play-services-basement:18.2.0] /Users/zhong_st/.gradle/caches/transforms-3/f5e3b01132e64abfaa2593336f10f1a6/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+120            android:value="@integer/google_play_services_version" />
+120-->[com.google.android.gms:play-services-basement:18.2.0] /Users/zhong_st/.gradle/caches/transforms-3/f5e3b01132e64abfaa2593336f10f1a6/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+121
+122        <provider
+122-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+123            android:name="androidx.startup.InitializationProvider"
+123-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+124            android:authorities="com.example.skeleton_app.androidx-startup"
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+125            android:exported="false" >
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/zhong_st/.gradle/caches/transforms-3/1373b11af185b4bb3172a4e9c52fc62f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+131                android:value="androidx.startup" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+132        </provider>
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/zhong_st/.gradle/caches/transforms-3/0dd0dcab28862edfe1526ea1ea277e7f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153    </application>
+154
+155</manifest>

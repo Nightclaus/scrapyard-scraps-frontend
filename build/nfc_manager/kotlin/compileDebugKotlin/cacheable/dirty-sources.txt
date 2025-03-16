@@ -1,0 +1,2 @@
+/Users/zhong_st/.pub-cache/hosted/pub.dev/nfc_manager-3.5.0/android/src/main/kotlin/io/flutter/plugins/nfcmanager/Translator.kt
+/Users/zhong_st/.pub-cache/hosted/pub.dev/nfc_manager-3.5.0/android/src/main/kotlin/io/flutter/plugins/nfcmanager/NfcManagerPlugin.kt
