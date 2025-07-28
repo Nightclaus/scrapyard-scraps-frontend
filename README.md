@@ -80,6 +80,11 @@ To get a local copy up and running, follow these steps.
     flutter run
     ```
 
+## Section in the Hackathon Impact Report
+![Overview](overview.png "Programing Section Title")
+![Frontend](frontend.png "Frontend")
+![Backend](backend.png "Backend")
+
 ## Future Improvements
 
 This system is being actively developed and enhanced for the upcoming Submerged Hackathon. Key areas of focus include:
