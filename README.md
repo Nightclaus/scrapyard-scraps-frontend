@@ -1,6 +1,6 @@
 # Scrapyard Scraps - Digital Currency System
 
-This repository contains the front-end code for "Scraps," the official digital currency system developed for the Sydney Scrapyard Hackathon (November 2024 – March 2025). The system was designed to provide a seamless and engaging way for participants to manage and use their event-specific currency.
+This repository contains the front-end code for "Scraps," the official digital currency system developed for the Sydney Scrapyard Hackathon on March 22nd and 23rd in the USYD Redfern Campus . The system was designed to provide a seamless and engaging way for participants to manage and use their event-specific currency.
 
 As the lead backend systems engineer, I am currently improving this system for the upcoming Submerged Hackathon in December, focusing on enhanced security and user experience.
 
